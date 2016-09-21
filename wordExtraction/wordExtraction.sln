@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wordExtraction", "wordExtraction\wordExtraction.csproj", "{F4CB20BC-9395-4B3D-9DC1-7875D2D22F7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "..\..\CSharp\BigHomeWork2\Host\Host.csproj", "{178CF948-67D2-4752-8EF5-64299F933F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contract", "..\..\CSharp\BigHomeWork2\Contract\Contract.csproj", "{0C657766-CCC3-494C-B0FC-0CE1E0727B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent", "..\..\CSharp\BigHomeWork2\Agent\Agent.csproj", "{82B177EE-EB3D-4654-B69B-3F030B425DFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "..\..\CSharp\BigHomeWork2\Manager\Manager.csproj", "{05A87736-C5F3-4033-B982-4898E56788D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkADO", "..\..\CSharp\HomeWorkADO1\HomeWorkADO\HomeWorkADO.csproj", "{87B3C769-3703-4255-A272-9AFDB168ED70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05A87736-C5F3-4033-B982-4898E56788D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05A87736-C5F3-4033-B982-4898E56788D1}.Debug|x86.Build.0 = Debug|Any CPU
+		{05A87736-C5F3-4033-B982-4898E56788D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{05A87736-C5F3-4033-B982-4898E56788D1}.Release|x86.Build.0 = Release|Any CPU
+		{0C657766-CCC3-494C-B0FC-0CE1E0727B53}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C657766-CCC3-494C-B0FC-0CE1E0727B53}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C657766-CCC3-494C-B0FC-0CE1E0727B53}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C657766-CCC3-494C-B0FC-0CE1E0727B53}.Release|x86.Build.0 = Release|Any CPU
+		{178CF948-67D2-4752-8EF5-64299F933F6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{178CF948-67D2-4752-8EF5-64299F933F6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{178CF948-67D2-4752-8EF5-64299F933F6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{178CF948-67D2-4752-8EF5-64299F933F6C}.Release|x86.Build.0 = Release|Any CPU
+		{82B177EE-EB3D-4654-B69B-3F030B425DFB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{82B177EE-EB3D-4654-B69B-3F030B425DFB}.Debug|x86.Build.0 = Debug|Any CPU
+		{82B177EE-EB3D-4654-B69B-3F030B425DFB}.Release|x86.ActiveCfg = Release|Any CPU
+		{82B177EE-EB3D-4654-B69B-3F030B425DFB}.Release|x86.Build.0 = Release|Any CPU
+		{87B3C769-3703-4255-A272-9AFDB168ED70}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87B3C769-3703-4255-A272-9AFDB168ED70}.Debug|x86.Build.0 = Debug|Any CPU
+		{87B3C769-3703-4255-A272-9AFDB168ED70}.Release|x86.ActiveCfg = Release|Any CPU
+		{87B3C769-3703-4255-A272-9AFDB168ED70}.Release|x86.Build.0 = Release|Any CPU
+		{F4CB20BC-9395-4B3D-9DC1-7875D2D22F7C}.Debug|x86.ActiveCfg = Debug|x86
+		{F4CB20BC-9395-4B3D-9DC1-7875D2D22F7C}.Debug|x86.Build.0 = Debug|x86
+		{F4CB20BC-9395-4B3D-9DC1-7875D2D22F7C}.Release|x86.ActiveCfg = Release|x86
+		{F4CB20BC-9395-4B3D-9DC1-7875D2D22F7C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = wordExtraction\wordExtraction.csproj
+	EndGlobalSection
+EndGlobal
