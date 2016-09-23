@@ -49,10 +49,10 @@ namespace wordExtraction
 						{
 							try
                             {
-                                //If current word is not in the dictionary, then an exception nwould be thrown.
+                                //If current word is not in the dictionary, then an exception would be thrown.
                                 //And in exception handle function, we do nothing but continue to process next word.
                                 Record record = DictionaryBuilder.WordDict[words[i]];
-                                //for example, let the current word be the center, and give a window which which length is 2
+                                //for example, let the current word be the center, and give a window which length is 2
                                 //then the fragment would contain 5 words
                                 List<String> fragmentstr = words.GetRange(i - window, window * 2 + 1);
                                 String fragment = ToFragment(fragmentstr);
