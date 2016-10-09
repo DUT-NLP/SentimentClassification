@@ -1,6 +1,17 @@
 ﻿<Properties StartupItem="wordExtraction/wordExtraction.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="wordExtraction/DictionaryBuilder.cs">
+    <Files>
+      <File FileName="wordExtraction/Program.cs" Line="13" Column="41" />
+      <File FileName="wordExtraction/Record.cs" Line="1" Column="1" />
+      <File FileName="wordExtraction/Document.cs" Line="1" Column="1" />
+      <File FileName="wordExtraction/Exactor.cs" Line="135" Column="2" />
+      <File FileName="wordExtraction/DictionaryBuilder.cs" Line="1" Column="1" />
+      <File FileName="wordExtraction/SerializerForBigLSTM.cs" Line="37" Column="22" />
+      <File FileName="wordExtraction/SerializerWSR.cs" Line="5" Column="2" />
+      <File FileName="wordExtraction/FragmentSenitment.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

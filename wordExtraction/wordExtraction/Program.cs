@@ -10,7 +10,7 @@ namespace wordExtraction
     {
         public static void Main(string[] args)
         {
-            SerializerWSR.Serialize();
+            //SerializerWSR.Serialize();
             //SerializerForBigLSTM.Serialize();
             //DictionaryBuilder.GenerateSentiWordList("/home/laboratory/corpus/en/SentiWordList_en.txt");
             //DictionaryBuilder.GenerateSentiWordList("/home/laboratory/corpus/cn/SentiWordList_cn.txt");
