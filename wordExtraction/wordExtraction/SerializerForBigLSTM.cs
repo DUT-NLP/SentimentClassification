@@ -1,15 +1,16 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Configuration;
 
 namespace wordExtraction
 {
     public class SerializerForBigLSTM
     {   
-        public static int dimension = 50;
-        public static String type = "book";
+        public static int dimension = 100;
+        public static String type = ConfigurationManager.AppSettings["dataType"];
         public static int wordNum = 0;
-        public static String sentiDim = "50d/";
+        public static String sentiDim = "100d/";
         public static int num = 1;
 
         public static void Serialize()
@@ -18,8 +19,8 @@ namespace wordExtraction
             //String corpusPath = "G:/liuzhuang/corpus_newDict_AddMoreNegativeWords/";
             //String vectorTablePath = "G:/liuzhuang/corpus/";
 
-            String corpusPath = "/home/laboratory/corpus/";
-            String vectorTablePath = "/home/laboratory/corpus/";
+            String corpusPath = "I:/liuzhuang/sentimentClassification_corpus_addAbstraction/";
+            String vectorTablePath = "G:/liuzhuang/corpus/";
 
             String IndexEmbedPath = corpusPath + "data/";
             String corpusPath_en = corpusPath + "en/";
@@ -80,7 +81,7 @@ namespace wordExtraction
             List<String> dict = new List<String>();
             List<String> wordIndex = new List<String>();
             Dictionary<String,String> wordList = new Dictionary<String, String>();
-
+            wordNum = wordIndex.Count;
             extract(srcTrainEnPath, desTrainEnPath, gloveEmbedding, trainEnSentEmbedding, dict, wordList, wordIndex, enSentiWord);
             System.Console.WriteLine(wordNum-tempNum);
             tempNum = wordNum; 
@@ -163,8 +164,8 @@ namespace wordExtraction
             return srcMap;
         }
         public static void extract(String srcPath,
-                                   String desPath, Dictionary<String, String> gloveEmbedding,
-                                   Dictionary<String, String> sentEmbedding, List<String> dict, Dictionary<String, String> wordList, List<String> list, List<String> sentiList){
+            String desPath, Dictionary<String, String> gloveEmbedding,
+            Dictionary<String, String> sentEmbedding, List<String> dict, Dictionary<String, String> wordList, List<String> list, List<String> sentiList){
 
             int rowNum = 0;
             System.Console.WriteLine("Extracting...");
@@ -230,8 +231,8 @@ namespace wordExtraction
                     }else{
                         //not get the embedding from gloveEmbeddings
                         embedding = "";
+                        Random a = new Random(DateTime.Now.Second);
                         for(int j = 0; j < dimension; j++){
-                            Random a = new Random(DateTime.Now.Second);
                             double value = a.NextDouble()*2-1;
                             embedding = embedding + " "+ value.ToString();
                         }

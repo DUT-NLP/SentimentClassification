@@ -40,3 +40,7 @@ nosetests.xml
 .vscode
 *.npz
 *.npz.pkl
+*bin
+*obj
+*mdb
+*exe

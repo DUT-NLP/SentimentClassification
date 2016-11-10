@@ -9,6 +9,7 @@ namespace wordExtraction
 	public class Exactor
 	{
         private static List<String> mNegativeWords = new List<String>(ConfigurationManager.AppSettings["NegativeWords"].Split(','));
+        private static Boolean addAbstraction = Boolean.Parse(ConfigurationManager.AppSettings["addAbstraction"]);
         private static Int32 window = Int32.Parse(ConfigurationManager.AppSettings["WindowSize"]);
         private static String BLANK = "BLANK";
 		private List<String> mDocumentsPath;
@@ -41,8 +42,10 @@ namespace wordExtraction
 				{
 					Paragraph prag = doc.NextParagraph ();
 					Int32 LineNumberInPrag = 0;
+                    Boolean hasNoSentimentWord = true;
 					foreach (String str in prag.Lines) 
 					{
+                        hasNoSentimentWord = true;
                         LineNumberInPrag++;
                         List<String> words = NomalizeLineToWords (str);
 						for(int i = window; i < words.Count - window; ++i)
@@ -60,6 +63,7 @@ namespace wordExtraction
                                 sw.WriteLine((new FragmentSenitment(fragment, fragPriorpolarity).ToString()));
                                 swNumber.WriteLine(String.Format("{0} {1}", doc.CurrentParagraphNumber, LineNumberInPrag));
                                 swLabel.WriteLine(GetLabel(fragPriorpolarity));
+                                hasNoSentimentWord = false;
 							}
 							catch (Exception) 
 							{
@@ -67,6 +71,20 @@ namespace wordExtraction
                                 continue;
 							}
 						}
+                        if (LineNumberInPrag == 1 && hasNoSentimentWord && addAbstraction)
+                        {
+                            words.Remove("[");
+                            words.Remove("]");
+                            for (int i = words.Count; i < window * 2 + 1; i++)
+                            {
+                                words.Add("BLANK");
+                            }                                
+                            List<String> fragmentstr = words.GetRange(0, window * 2 + 1);
+                            String fragment = ToFragment(fragmentstr);
+                            sw.WriteLine((new FragmentSenitment(fragment, prag.Priorpolarity).ToString()));
+                            swNumber.WriteLine(String.Format("{0} {1}", doc.CurrentParagraphNumber, LineNumberInPrag));
+                            swLabel.WriteLine(GetLabel(prag.Priorpolarity));
+                        }
 					}
                     if(prag.Length != 0)
                         swNumber.WriteLine("end " + prag.Length);
