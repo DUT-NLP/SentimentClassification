@@ -1,6 +1,0 @@
-/home/laboratory/lab/SentimentClassification/wordExtraction/wordExtraction/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/home/laboratory/lab/SentimentClassification/wordExtraction/wordExtraction/bin/Debug/wordExtraction.exe.config
-/home/laboratory/lab/SentimentClassification/wordExtraction/wordExtraction/bin/Debug/wordExtraction.exe.mdb
-/home/laboratory/lab/SentimentClassification/wordExtraction/wordExtraction/bin/Debug/wordExtraction.exe
-/home/laboratory/lab/SentimentClassification/wordExtraction/wordExtraction/obj/x86/Debug/wordExtraction.exe
-/home/laboratory/lab/SentimentClassification/wordExtraction/wordExtraction/obj/x86/Debug/wordExtraction.exe.mdb

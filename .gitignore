@@ -44,3 +44,4 @@ nosetests.xml
 *obj
 *mdb
 *exe
+*.userprefs
