@@ -1,10 +1,10 @@
 # Cross-language Sentiment Classification<br>
 Jointly learning the Billingual Sentiment and Semantic representations for the CLSC.<br>
-## details
+## Details
 For more information about Long-short memory network, you can visit <http://deeplearning.net/tutorial/lstm.html#lstm><br>
 In our work, we adopt an LSTM variant, which adds the "peephole connections" to the architecture [Gers and Schmidhuber,2000]<br> 
-
-## requriments
+![peeohole] (https://github.com/DUT-NLP/SentimentClassification/blob/master/peephole.png)
+## Requriments
 python 2.7.11 and theano 0.8.2  
 
 ## Reference
